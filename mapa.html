@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a4ebeded3ff89e1ad7992103b4f0a298 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a4ebeded3ff89e1ad7992103b4f0a298" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a4ebeded3ff89e1ad7992103b4f0a298 = L.map(
+                "map_a4ebeded3ff89e1ad7992103b4f0a298",
+                {
+                    center: [-15.8308464, -47.9057899],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6b9179f06a75c7602ffce299b808c282 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a4ebeded3ff89e1ad7992103b4f0a298);
+        
+    
+            var locate_control_3894c273e283d8907f7d94e772361014 = L.control.locate(
+                {}
+            ).addTo(map_a4ebeded3ff89e1ad7992103b4f0a298);
+            
+                locate_control_3894c273e283d8907f7d94e772361014.start();
+            
+        
+    
+            var feature_group_9d59295c62a25f46d9d1a6f16c096945 = L.featureGroup(
+                {}
+            ).addTo(map_a4ebeded3ff89e1ad7992103b4f0a298);
+        
+    
+            var marker_305572935f15fa5c7e73a16fc17e5176 = L.marker(
+                [-15.819030053707445, -47.89508831031263],
+                {}
+            ).addTo(feature_group_9d59295c62a25f46d9d1a6f16c096945);
+        
+    
+            var icon_06324a8e4b6e3108690f74664a96885e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shield-heart", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_305572935f15fa5c7e73a16fc17e5176.setIcon(icon_06324a8e4b6e3108690f74664a96885e);
+        
+    
+        var popup_fee98ab4349f9ba4c486e3b4fb3dda44 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_864f71846e1d28c6845ead56a5d538d4 = $(`<div id="html_864f71846e1d28c6845ead56a5d538d4" style="width: 100.0%; height: 100.0%;"><b>Nutribakery</b><br><i>Certificado pela Associação dos Celíacos da UF</i><br><br>Asa Sul CLS 407 BL D Loja 08<br>Asa Sul</div>`)[0];
+                popup_fee98ab4349f9ba4c486e3b4fb3dda44.setContent(html_864f71846e1d28c6845ead56a5d538d4);
+            
+        
+
+        marker_305572935f15fa5c7e73a16fc17e5176.bindPopup(popup_fee98ab4349f9ba4c486e3b4fb3dda44)
+        ;
+
+        
+    
+    
+            marker_305572935f15fa5c7e73a16fc17e5176.bindTooltip(
+                `<div>
+                     <b>Nutribakery</b><br><i>Certificado pela Associação dos Celíacos da UF</i><br><br>Asa Sul CLS 407 BL D Loja 08<br>Asa Sul
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fd4b0f0aee616074fe5cf0596095ec6d = L.marker(
+                [-15.768255848023973, -47.887954279816114],
+                {}
+            ).addTo(feature_group_9d59295c62a25f46d9d1a6f16c096945);
+        
+    
+            var icon_c1b88cafc7beaca988f88bde5f8b9684 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shield-heart", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_fd4b0f0aee616074fe5cf0596095ec6d.setIcon(icon_c1b88cafc7beaca988f88bde5f8b9684);
+        
+    
+        var popup_e00531a2bc800817fe29a4409cc0075f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1e63cb5754ea1fd9ba318f3b2d09ab8 = $(`<div id="html_f1e63cb5754ea1fd9ba318f3b2d09ab8" style="width: 100.0%; height: 100.0%;"><b>Pinoli Pizza</b><br><i>Certificado pela Associação dos Celíacos da UF</i><br><br>CLN 307, Loja 34<br>Asa Norte</div>`)[0];
+                popup_e00531a2bc800817fe29a4409cc0075f.setContent(html_f1e63cb5754ea1fd9ba318f3b2d09ab8);
+            
+        
+
+        marker_fd4b0f0aee616074fe5cf0596095ec6d.bindPopup(popup_e00531a2bc800817fe29a4409cc0075f)
+        ;
+
+        
+    
+    
+            marker_fd4b0f0aee616074fe5cf0596095ec6d.bindTooltip(
+                `<div>
+                     <b>Pinoli Pizza</b><br><i>Certificado pela Associação dos Celíacos da UF</i><br><br>CLN 307, Loja 34<br>Asa Norte
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0bab06a21b501e16393726b699a15374 = L.marker(
+                [-15.827448409563315, -47.92265096684207],
+                {}
+            ).addTo(feature_group_9d59295c62a25f46d9d1a6f16c096945);
+        
+    
+            var icon_42d2c8397dac70d5d6f4199cdbf8c439 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shield-heart", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_0bab06a21b501e16393726b699a15374.setIcon(icon_42d2c8397dac70d5d6f4199cdbf8c439);
+        
+    
+        var popup_1afb431978db3506fca4c82f855b1330 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62aa4021a272f0462f78a05acb5dc965 = $(`<div id="html_62aa4021a272f0462f78a05acb5dc965" style="width: 100.0%; height: 100.0%;"><b>Quitutices - Confeitaria sem glúten</b><br><i>Certificado pela Associação dos Celíacos da UF</i><br><br>CLS 315 loja 33<br>Asa Sul</div>`)[0];
+                popup_1afb431978db3506fca4c82f855b1330.setContent(html_62aa4021a272f0462f78a05acb5dc965);
+            
+        
+
+        marker_0bab06a21b501e16393726b699a15374.bindPopup(popup_1afb431978db3506fca4c82f855b1330)
+        ;
+
+        
+    
+    
+            marker_0bab06a21b501e16393726b699a15374.bindTooltip(
+                `<div>
+                     <b>Quitutices - Confeitaria sem glúten</b><br><i>Certificado pela Associação dos Celíacos da UF</i><br><br>CLS 315 loja 33<br>Asa Sul
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_916b29a1530db52cf4841a420bd9500a = L.marker(
+                [-15.780672098788177, -47.88966119128672],
+                {}
+            ).addTo(feature_group_9d59295c62a25f46d9d1a6f16c096945);
+        
+    
+            var icon_8afc470f83aeeb37034d7c711398a566 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shield-heart", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_916b29a1530db52cf4841a420bd9500a.setIcon(icon_8afc470f83aeeb37034d7c711398a566);
+        
+    
+        var popup_ecb117f7341b2b06d317a2395b8574d6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9367b605ce8c500652be9c0794986121 = $(`<div id="html_9367b605ce8c500652be9c0794986121" style="width: 100.0%; height: 100.0%;"><b>Saucker</b><br><i>Certificado pela Associação dos Celíacos da UF</i><br><br>SCRN 702/703 BLOCO H LOJA 01<br>Asa Norte</div>`)[0];
+                popup_ecb117f7341b2b06d317a2395b8574d6.setContent(html_9367b605ce8c500652be9c0794986121);
+            
+        
+
+        marker_916b29a1530db52cf4841a420bd9500a.bindPopup(popup_ecb117f7341b2b06d317a2395b8574d6)
+        ;
+
+        
+    
+    
+            marker_916b29a1530db52cf4841a420bd9500a.bindTooltip(
+                `<div>
+                     <b>Saucker</b><br><i>Certificado pela Associação dos Celíacos da UF</i><br><br>SCRN 702/703 BLOCO H LOJA 01<br>Asa Norte
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_13faeefb55757710f707bd3632205b2c = L.marker(
+                [-15.777022482479019, -47.87793860676978],
+                {}
+            ).addTo(feature_group_9d59295c62a25f46d9d1a6f16c096945);
+        
+    
+            var icon_9cb51bf16fae1c43d0321d800396c4dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shield-heart", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_13faeefb55757710f707bd3632205b2c.setIcon(icon_9cb51bf16fae1c43d0321d800396c4dd);
+        
+    
+        var popup_2065c004bfd429ae6e06760926a3b76a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36de1db1214083bdb8a1ff0dc86ba695 = $(`<div id="html_36de1db1214083bdb8a1ff0dc86ba695" style="width: 100.0%; height: 100.0%;"><b>Supren Verda - Cozinha Vegana</b><br><i>Certificado pela Associação dos Celíacos da UF</i><br><br>SCLN 203 Bloco D Loja 53<br>Asa Norte</div>`)[0];
+                popup_2065c004bfd429ae6e06760926a3b76a.setContent(html_36de1db1214083bdb8a1ff0dc86ba695);
+            
+        
+
+        marker_13faeefb55757710f707bd3632205b2c.bindPopup(popup_2065c004bfd429ae6e06760926a3b76a)
+        ;
+
+        
+    
+    
+            marker_13faeefb55757710f707bd3632205b2c.bindTooltip(
+                `<div>
+                     <b>Supren Verda - Cozinha Vegana</b><br><i>Certificado pela Associação dos Celíacos da UF</i><br><br>SCLN 203 Bloco D Loja 53<br>Asa Norte
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f528abf25d164ba87674d2195b627372 = L.marker(
+                [-15.681103898276758, -47.834290693304965],
+                {}
+            ).addTo(feature_group_9d59295c62a25f46d9d1a6f16c096945);
+        
+    
+            var icon_9d08fdddfb82dca37b0e87109989b9e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "shield-heart", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f528abf25d164ba87674d2195b627372.setIcon(icon_9d08fdddfb82dca37b0e87109989b9e6);
+        
+    
+        var popup_bee1cb18ba6d87846f6f7d380cb1e4de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_444e8797a99ea9a3668e1c2373e3d3e6 = $(`<div id="html_444e8797a99ea9a3668e1c2373e3d3e6" style="width: 100.0%; height: 100.0%;"><b>Tudim Sem Glúten</b><br><i>Certificado pela Associação dos Celíacos da UF</i><br><br>SH Boa Vista Condomínio Império dos Nobres Q 1 MC 01 loja 1<br>Sobradinho</div>`)[0];
+                popup_bee1cb18ba6d87846f6f7d380cb1e4de.setContent(html_444e8797a99ea9a3668e1c2373e3d3e6);
+            
+        
+
+        marker_f528abf25d164ba87674d2195b627372.bindPopup(popup_bee1cb18ba6d87846f6f7d380cb1e4de)
+        ;
+
+        
+    
+    
+            marker_f528abf25d164ba87674d2195b627372.bindTooltip(
+                `<div>
+                     <b>Tudim Sem Glúten</b><br><i>Certificado pela Associação dos Celíacos da UF</i><br><br>SH Boa Vista Condomínio Império dos Nobres Q 1 MC 01 loja 1<br>Sobradinho
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_5060661a1fb0b2af40ab5d585f8d04b7 = L.featureGroup(
+                {}
+            ).addTo(map_a4ebeded3ff89e1ad7992103b4f0a298);
+        
+    
+            var marker_25f40ae933a8cc357793ce7c05f1d672 = L.marker(
+                [-15.79794846989483, -47.92136144911315],
+                {}
+            ).addTo(feature_group_5060661a1fb0b2af40ab5d585f8d04b7);
+        
+    
+            var icon_2eb5975883667e153991a39f4330e6b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_25f40ae933a8cc357793ce7c05f1d672.setIcon(icon_2eb5975883667e153991a39f4330e6b4);
+        
+    
+        var popup_cc15699fbb0b5bef5b40e6e2ae723d64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4638a0be3a9162324b290918a4c95382 = $(`<div id="html_4638a0be3a9162324b290918a4c95382" style="width: 100.0%; height: 100.0%;"><b>Há Hamburgueria Glúten Free</b><br><i>Seguro para pessoas celíacas</i><br><br>CLSW 301 Bloco C, Loja 162<br>Sudoeste</div>`)[0];
+                popup_cc15699fbb0b5bef5b40e6e2ae723d64.setContent(html_4638a0be3a9162324b290918a4c95382);
+            
+        
+
+        marker_25f40ae933a8cc357793ce7c05f1d672.bindPopup(popup_cc15699fbb0b5bef5b40e6e2ae723d64)
+        ;
+
+        
+    
+    
+            marker_25f40ae933a8cc357793ce7c05f1d672.bindTooltip(
+                `<div>
+                     <b>Há Hamburgueria Glúten Free</b><br><i>Seguro para pessoas celíacas</i><br><br>CLSW 301 Bloco C, Loja 162<br>Sudoeste
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_53ca2eb4391812a830bc0a0160f260bd = L.marker(
+                [-15.834879897044239, -48.03587198411513],
+                {}
+            ).addTo(feature_group_5060661a1fb0b2af40ab5d585f8d04b7);
+        
+    
+            var icon_5bccab8dc069e16b76a8cc5496fb9bec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "thumbs-up", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_53ca2eb4391812a830bc0a0160f260bd.setIcon(icon_5bccab8dc069e16b76a8cc5496fb9bec);
+        
+    
+        var popup_25f1de365655afa1428052e769536bfe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_107333eac77910c9166db14a83789c4a = $(`<div id="html_107333eac77910c9166db14a83789c4a" style="width: 100.0%; height: 100.0%;"><b>Passos sem Glúten</b><br><i>Seguro para pessoas celíacas</i><br><br>Rua 33/34, Blvd. Norte, 1 - loja 26<br>Águas Claras</div>`)[0];
+                popup_25f1de365655afa1428052e769536bfe.setContent(html_107333eac77910c9166db14a83789c4a);
+            
+        
+
+        marker_53ca2eb4391812a830bc0a0160f260bd.bindPopup(popup_25f1de365655afa1428052e769536bfe)
+        ;
+
+        
+    
+    
+            marker_53ca2eb4391812a830bc0a0160f260bd.bindTooltip(
+                `<div>
+                     <b>Passos sem Glúten</b><br><i>Seguro para pessoas celíacas</i><br><br>Rua 33/34, Blvd. Norte, 1 - loja 26<br>Águas Claras
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_0cb1d9b6a018ca1a7d42556818fadd81 = L.featureGroup(
+                {}
+            ).addTo(map_a4ebeded3ff89e1ad7992103b4f0a298);
+        
+    
+            var marker_91aa3b4f77c1f9b9e11cf30253cc7fb7 = L.marker(
+                [-15.757462356309084, -47.88317687814529],
+                {}
+            ).addTo(feature_group_0cb1d9b6a018ca1a7d42556818fadd81);
+        
+    
+            var icon_7c809e344f0b62075240c492b5336509 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cart-shopping", "iconColor": "white", "markerColor": "pink", "prefix": "fa"}
+            );
+            marker_91aa3b4f77c1f9b9e11cf30253cc7fb7.setIcon(icon_7c809e344f0b62075240c492b5336509);
+        
+    
+        var popup_aea6bec56e82394562bd54e4a2bc4de0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d31d48f32408b933f86a8f53782eca1 = $(`<div id="html_2d31d48f32408b933f86a8f53782eca1" style="width: 100.0%; height: 100.0%;"><b>Oba Hortifruti</b><br><i>Mercado com produtos sem glúten</i><br><br>CLN 209 Bl. B loja 19<br>Asa Norte</div>`)[0];
+                popup_aea6bec56e82394562bd54e4a2bc4de0.setContent(html_2d31d48f32408b933f86a8f53782eca1);
+            
+        
+
+        marker_91aa3b4f77c1f9b9e11cf30253cc7fb7.bindPopup(popup_aea6bec56e82394562bd54e4a2bc4de0)
+        ;
+
+        
+    
+    
+            marker_91aa3b4f77c1f9b9e11cf30253cc7fb7.bindTooltip(
+                `<div>
+                     <b>Oba Hortifruti</b><br><i>Mercado com produtos sem glúten</i><br><br>CLN 209 Bl. B loja 19<br>Asa Norte
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_d6f1a5956236902bd8dc376eafc37958 = L.featureGroup(
+                {}
+            ).addTo(map_a4ebeded3ff89e1ad7992103b4f0a298);
+        
+    
+            var marker_c9da152ee11bce2ce742592e4f16702d = L.marker(
+                [-15.755571591154526, -47.88814689328546],
+                {}
+            ).addTo(feature_group_d6f1a5956236902bd8dc376eafc37958);
+        
+    
+            var icon_bd894a5df67f2b759e7f9fc7a7a2f370 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wheat-awn-circle-exclamation", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c9da152ee11bce2ce742592e4f16702d.setIcon(icon_bd894a5df67f2b759e7f9fc7a7a2f370);
+        
+    
+        var popup_ea8cd842cfdb37df24c1889476cc3034 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_092032e0c5d71f0a87e1496312171aac = $(`<div id="html_092032e0c5d71f0a87e1496312171aac" style="width: 100.0%; height: 100.0%;"><b>Dom Parrillero</b><br><i>Risco de contaminação cruzada</i><br><br>Entrequadra Norte 110/111<br>Plaza Norte<br>Asa Norte</div>`)[0];
+                popup_ea8cd842cfdb37df24c1889476cc3034.setContent(html_092032e0c5d71f0a87e1496312171aac);
+            
+        
+
+        marker_c9da152ee11bce2ce742592e4f16702d.bindPopup(popup_ea8cd842cfdb37df24c1889476cc3034)
+        ;
+
+        
+    
+    
+            marker_c9da152ee11bce2ce742592e4f16702d.bindTooltip(
+                `<div>
+                     <b>Dom Parrillero</b><br><i>Risco de contaminação cruzada</i><br><br>Entrequadra Norte 110/111<br>Plaza Norte<br>Asa Norte
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f207c7bc533e6fb43ec982460c2cb28c = L.marker(
+                [-15.80133929207535, -47.88449094738337],
+                {}
+            ).addTo(feature_group_d6f1a5956236902bd8dc376eafc37958);
+        
+    
+            var icon_557791a36b578596928d47be310f9018 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wheat-awn-circle-exclamation", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f207c7bc533e6fb43ec982460c2cb28c.setIcon(icon_557791a36b578596928d47be310f9018);
+        
+    
+        var popup_2947756c1180d8ebe1fd51072f933851 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3661fa1b646a14cf1deca57c26ab224d = $(`<div id="html_3661fa1b646a14cf1deca57c26ab224d" style="width: 100.0%; height: 100.0%;"><b>Horta Cozinha Criativa</b><br><i>Risco de contaminação cruzada</i><br><br>CLS 202 BL C Loja 04<br>Asa Sul</div>`)[0];
+                popup_2947756c1180d8ebe1fd51072f933851.setContent(html_3661fa1b646a14cf1deca57c26ab224d);
+            
+        
+
+        marker_f207c7bc533e6fb43ec982460c2cb28c.bindPopup(popup_2947756c1180d8ebe1fd51072f933851)
+        ;
+
+        
+    
+    
+            marker_f207c7bc533e6fb43ec982460c2cb28c.bindTooltip(
+                `<div>
+                     <b>Horta Cozinha Criativa</b><br><i>Risco de contaminação cruzada</i><br><br>CLS 202 BL C Loja 04<br>Asa Sul
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ac0a07a32b1b05c7b5fd602dcff38ec = L.marker(
+                [-15.804647271652168, -47.885163948051726],
+                {}
+            ).addTo(feature_group_d6f1a5956236902bd8dc376eafc37958);
+        
+    
+            var icon_1cbc78ae6addbc2655ea56fc6f4add9a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wheat-awn-circle-exclamation", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_5ac0a07a32b1b05c7b5fd602dcff38ec.setIcon(icon_1cbc78ae6addbc2655ea56fc6f4add9a);
+        
+    
+        var popup_c338228f89391d6ddd21409f70116ad3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_50cf9749d85e6f6e5758389054d4efbf = $(`<div id="html_50cf9749d85e6f6e5758389054d4efbf" style="width: 100.0%; height: 100.0%;"><b>L'Entrecote de Paris</b><br><i>Risco de contaminação cruzada</i><br><br>Asa Sul Comércio Local Sul 402 Loja 09<br>Asa Sul</div>`)[0];
+                popup_c338228f89391d6ddd21409f70116ad3.setContent(html_50cf9749d85e6f6e5758389054d4efbf);
+            
+        
+
+        marker_5ac0a07a32b1b05c7b5fd602dcff38ec.bindPopup(popup_c338228f89391d6ddd21409f70116ad3)
+        ;
+
+        
+    
+    
+            marker_5ac0a07a32b1b05c7b5fd602dcff38ec.bindTooltip(
+                `<div>
+                     <b>L'Entrecote de Paris</b><br><i>Risco de contaminação cruzada</i><br><br>Asa Sul Comércio Local Sul 402 Loja 09<br>Asa Sul
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_78a95492c3c92e5c596f8d81ca094f05 = L.marker(
+                [-15.808573450838477, -47.886082882051205],
+                {}
+            ).addTo(feature_group_d6f1a5956236902bd8dc376eafc37958);
+        
+    
+            var icon_c2327bf4be7b61c690bb33cc57ecef10 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wheat-awn-circle-exclamation", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_78a95492c3c92e5c596f8d81ca094f05.setIcon(icon_c2327bf4be7b61c690bb33cc57ecef10);
+        
+    
+        var popup_80747fedabd61af543a7f1ed704534fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a0058cd747b23a4418a81aeee79ec48 = $(`<div id="html_9a0058cd747b23a4418a81aeee79ec48" style="width: 100.0%; height: 100.0%;"><b>Nippon Restaurante</b><br><i>Risco de contaminação cruzada</i><br><br>CLS 403<br>Asa Sul</div>`)[0];
+                popup_80747fedabd61af543a7f1ed704534fe.setContent(html_9a0058cd747b23a4418a81aeee79ec48);
+            
+        
+
+        marker_78a95492c3c92e5c596f8d81ca094f05.bindPopup(popup_80747fedabd61af543a7f1ed704534fe)
+        ;
+
+        
+    
+    
+            marker_78a95492c3c92e5c596f8d81ca094f05.bindTooltip(
+                `<div>
+                     <b>Nippon Restaurante</b><br><i>Risco de contaminação cruzada</i><br><br>CLS 403<br>Asa Sul
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a063b23394234e5fbda9c92e1e9bcf12 = L.marker(
+                [-15.71997437738565, -47.885373768804335],
+                {}
+            ).addTo(feature_group_d6f1a5956236902bd8dc376eafc37958);
+        
+    
+            var icon_34538e5a2f8884f2911a4a1c2d5c6b87 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wheat-awn-circle-exclamation", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a063b23394234e5fbda9c92e1e9bcf12.setIcon(icon_34538e5a2f8884f2911a4a1c2d5c6b87);
+        
+    
+        var popup_286d9be6ccd0993c60d95764ee24237c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e3ad42e44cd80bfd3d2825d1bfcd96f = $(`<div id="html_6e3ad42e44cd80bfd3d2825d1bfcd96f" style="width: 100.0%; height: 100.0%;"><b>Outback Iguatemi</b><br><i>Risco de contaminação cruzada</i><br><br>St. de Habitações Individuais Norte CA 4 Loja 21<br>Lago Norte</div>`)[0];
+                popup_286d9be6ccd0993c60d95764ee24237c.setContent(html_6e3ad42e44cd80bfd3d2825d1bfcd96f);
+            
+        
+
+        marker_a063b23394234e5fbda9c92e1e9bcf12.bindPopup(popup_286d9be6ccd0993c60d95764ee24237c)
+        ;
+
+        
+    
+    
+            marker_a063b23394234e5fbda9c92e1e9bcf12.bindTooltip(
+                `<div>
+                     <b>Outback Iguatemi</b><br><i>Risco de contaminação cruzada</i><br><br>St. de Habitações Individuais Norte CA 4 Loja 21<br>Lago Norte
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cb65450eb2f0d6fbc9e17da4bd7069cd = L.marker(
+                [-15.755539198616534, -47.88821668413602],
+                {}
+            ).addTo(feature_group_d6f1a5956236902bd8dc376eafc37958);
+        
+    
+            var icon_7ce03f9795c6838e51e2cc4f9d5d6452 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "wheat-awn-circle-exclamation", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_cb65450eb2f0d6fbc9e17da4bd7069cd.setIcon(icon_7ce03f9795c6838e51e2cc4f9d5d6452);
+        
+    
+        var popup_5ed43fab2863c8391a46b0753adeeeb5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1629bb0c5ee707b381635968442922b7 = $(`<div id="html_1629bb0c5ee707b381635968442922b7" style="width: 100.0%; height: 100.0%;"><b>Peixe na Rede</b><br><i>Risco de contaminação cruzada</i><br><br>Plaza Shopping<br>EQN 110/111 LOTE A Ed. Plaza Norte, SHCN<br>Asa Norte</div>`)[0];
+                popup_5ed43fab2863c8391a46b0753adeeeb5.setContent(html_1629bb0c5ee707b381635968442922b7);
+            
+        
+
+        marker_cb65450eb2f0d6fbc9e17da4bd7069cd.bindPopup(popup_5ed43fab2863c8391a46b0753adeeeb5)
+        ;
+
+        
+    
+    
+            marker_cb65450eb2f0d6fbc9e17da4bd7069cd.bindTooltip(
+                `<div>
+                     <b>Peixe na Rede</b><br><i>Risco de contaminação cruzada</i><br><br>Plaza Shopping<br>EQN 110/111 LOTE A Ed. Plaza Norte, SHCN<br>Asa Norte
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_d8ab1f975fe33680ab3c55e494d22c57 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_6b9179f06a75c7602ffce299b808c282,
+                },
+                overlays :  {
+                    "Parceiro Acelbra" : feature_group_9d59295c62a25f46d9d1a6f16c096945,
+                    "Seguro" : feature_group_5060661a1fb0b2af40ab5d585f8d04b7,
+                    "Mercado" : feature_group_0cb1d9b6a018ca1a7d42556818fadd81,
+                    "Cozinha compartilhada" : feature_group_d6f1a5956236902bd8dc376eafc37958,
+                },
+            };
+            L.control.layers(
+                layer_control_d8ab1f975fe33680ab3c55e494d22c57.base_layers,
+                layer_control_d8ab1f975fe33680ab3c55e494d22c57.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_a4ebeded3ff89e1ad7992103b4f0a298);
+        
+</script>
+</html>
